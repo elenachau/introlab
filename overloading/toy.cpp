@@ -49,11 +49,19 @@ float Toy::operator+(const float& t){
     return temp;
 }
 
-Toy& Toy::operator-(const Toy& t){
+Toy& Toy::operator-(const Toy& t){ //return reference to Toy object
     Toy* newToy = new Toy; //allocates memory of new Toy object, assigning to ptr
     newToy->setCost(cost-t.cost);
     return *newToy;
 }
+
+//alt
+// Toy Toy::operator-(const Toy& t) const {
+//     Toy newToy = *this; //create a copy of the current object
+//     newToy.setCost(cost - t.cost);
+//     return newToy;
+// }
+
 
 void Toy::operator*=(const float tax){
     cost*=tax;
