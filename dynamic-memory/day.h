@@ -19,7 +19,7 @@ class Day{
         void setNextDay(Day*);
         void displayDay();
         
-        Day& operator=(const Day& rhs);
+        Day& operator=(const Day&);
         ~Day();
 };
 
