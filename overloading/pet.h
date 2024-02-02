@@ -33,6 +33,7 @@ class Pet{
 
         void calculatePetCost();
 
+        //to access Pet private and protected members
         friend ostream& operator<<(ostream& out, const Pet& p); //Pet object to output
         friend ifstream& operator>>(ifstream& in, Pet& p);
 };
