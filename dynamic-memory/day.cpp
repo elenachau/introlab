@@ -28,7 +28,7 @@ Day* Day::getNextDay(){
     return nextDay;
 }
 
-void Day::setNextDay(Day* d){ //pointer to Date type object
+void Day::setNextDay(Day* d){ //pointer to Day type object
     nextDay = d;
 }
 
