@@ -1,4 +1,4 @@
-#ifndef DAY_h
+#ifndef DAY_H
 #define DAY_H
 
 #include <iostream>
