@@ -40,6 +40,7 @@ int main(){
     return 0;
 }
 
+//for a const object like Pet& p, ensure other member functions e.g. displayToy you call on it are also declared const
 ostream& operator<<(ostream& out, const Pet& p) { //to write
     out << endl << p.name << " " << p.species << " " << p.age << endl;
     out << "====Toys====" << endl;
