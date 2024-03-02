@@ -44,7 +44,7 @@ void Toy::displayToy()const{ //make displayToy const, using displayToy for opera
     cout << brand << " " << toyName << ": " << cost << endl;
 }
 
-float Toy::operator+(const float& t){
+float Toy::operator+(const float& t){ //specifying Toy::operator+ expects a Toy obj for the left operand
     float temp = cost + t;
     return temp;
 }
@@ -61,7 +61,6 @@ Toy& Toy::operator-(const Toy& t){ //return reference to Toy object
 //     newToy.setCost(cost - t.cost);
 //     return newToy;
 // }
-
 
 void Toy::operator*=(const float tax){
     cost*=tax;
