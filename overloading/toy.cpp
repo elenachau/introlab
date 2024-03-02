@@ -40,7 +40,7 @@ void Toy::setCost(const float c){
     cost = c;
 }
 
-void Toy::displayToy()const{
+void Toy::displayToy()const{ //make displayToy const, using displayToy for operator<<
     cout << brand << " " << toyName << ": " << cost << endl;
 }
 
