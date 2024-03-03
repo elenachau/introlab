@@ -106,7 +106,7 @@ void Pet::printPetData(){
 
     cout << endl << "Total Cost: $" << cost << endl;
     cout << "I say: ";
-    printPetUtterence(); //interpreted by each child
+    printPetUtterance(); //interpreted by each child
     if(species == "Chicken") {
         cout << endl << "Number of Eggs Laid: ";
     }
