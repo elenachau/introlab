@@ -31,7 +31,7 @@ void Chicken::setNumEggsLaid(const int val){
 }
 
 void Chicken::printPetUtterance(){
-    cout << "\"Bawk\"";
+    cout << "\"Bawk\"" << endl;
 }
 
 void Chicken::calculatePetCost(){
