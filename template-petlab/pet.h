@@ -37,7 +37,7 @@ class Pet{
         void setCost(const float);
 
         void printPetData();
-        virtual void printPetUtterence() = 0; //virtual means any derived class inheriting from Pet must provide its implementation for this function
+        virtual void printPetUtterance() = 0; //virtual means any derived class inheriting from Pet must provide its implementation for this function
         virtual void calculatePetCost() = 0;
         virtual const int getIntValueFromChild() = 0;
 };
