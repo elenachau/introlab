@@ -31,11 +31,6 @@ Pet::Pet(const Pet& rhs){
     }
 }
 
-Pet::~Pet(){
-    delete[] ownedToys; //free toy array memory
-}
-
-
 const string Pet::getName(){
     return name;
 }
@@ -46,7 +41,7 @@ void Pet::setName(const string n){
 
 
 const string Pet::getSpecies(){
-
+    return species;
 }
 
 void Pet::setSpecies(const string s){
@@ -111,7 +106,7 @@ void Pet::printPetData(){
 
     cout << endl << "Total Cost: $" << cost << endl;
     cout << "I say: ";
-    printPetUtterence(); //intepreted by each child
+    printPetUtterence(); //interpreted by each child
     if(species == "Chicken") {
         cout << endl << "Number of Eggs Laid: ";
     }
@@ -120,4 +115,8 @@ void Pet::printPetData(){
     }
     cout << getIntValueFromChild() << endl;
     cout << endl;
+}
+
+Pet::~Pet(){
+    delete[] ownedToys; //free toy array memory
 }
