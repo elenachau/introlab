@@ -14,7 +14,7 @@ class PetStore {
         PetStore(const PetStore&);
         ~PetStore();
 
-        T** getpetStock();
+        T** getPetStock();
         void addPetToStock(T*);
 
         int getNum();
