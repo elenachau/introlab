@@ -27,7 +27,7 @@ PetStore<T>::PetStore(const PetStore& rhs){
 }
 
 template<class T>
-T** PetStore<T>::getpetStock(){
+T** PetStore<T>::getPetStock(){
     return petStock;
 }
 
