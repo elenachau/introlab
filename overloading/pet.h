@@ -35,6 +35,8 @@ class Pet{
 
         //to access Pet private and protected members
         friend ostream& operator<<(ostream& out, const Pet& p); //Pet object to output
+        //ifstream derives from istream (base class to read input); ifstream is for file input while istream is for other sources e.g. keyboard
+        // friend istream& operator>>(istream& in, Pet& p);
         friend ifstream& operator>>(ifstream& in, Pet& p);
 };
 
