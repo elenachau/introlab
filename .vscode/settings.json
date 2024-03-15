@@ -2,6 +2,17 @@
   "files.associations": {
     "iosfwd": "cpp",
     "iostream": "cpp",
-    "new": "cpp"
+    "new": "cpp",
+    "__locale": "cpp",
+    "__threading_support": "cpp",
+    "bitset": "cpp",
+    "compare": "cpp",
+    "ios": "cpp",
+    "istream": "cpp",
+    "locale": "cpp",
+    "ostream": "cpp",
+    "streambuf": "cpp",
+    "string": "cpp",
+    "type_traits": "cpp"
   }
 }
