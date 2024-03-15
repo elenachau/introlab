@@ -80,7 +80,7 @@ void Month::addDayToMonth(Day d){ //encapsulation
     newDay->setNumber(d.getNumber());
     if(firstMonth == nullptr) {
         firstMonth = newDay; //pointer firstMonth and pointer newDay points to the same object
-        lastMonth = firstMonth;
+        lastMonth = firstMonth; //same if 1 day exists in calendar
     }
     else {
         lastMonth->setNextDay(newDay);
