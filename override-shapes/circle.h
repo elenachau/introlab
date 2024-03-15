@@ -5,8 +5,8 @@
 
 class Circle: public Shape{
     float radius;
-    void calcPerimeter() override;
-    void calcArea() override;
+    void calcPerimeter(); //override;
+    void calcArea(); //override;
 
     public:
         Circle();
