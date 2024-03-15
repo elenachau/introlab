@@ -32,10 +32,9 @@ class Pet{
             void setCost(const float);
 
             int getNumToys() const;
+            void resizeArray();
 
             Pet& operator=(const Pet&);
-
-            void resizeArray();
 
             virtual void printPetData();
             virtual void printPetUtterance() = 0;
