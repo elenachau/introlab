@@ -25,6 +25,14 @@ void Circle::setRadius(float newRadius){
     calcArea();
 }
 
+void Circle::calcPerimeter(){
+    perimeter = 2 * PI * radius;
+}
+
+void Circle::calcArea(){
+    area = PI * radius * radius;
+}
+
 Circle::~Circle(){
     cout << "circle" << endl;
     delete[] sides;
