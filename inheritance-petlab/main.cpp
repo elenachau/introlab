@@ -8,6 +8,11 @@ int main(){
     Toy xylophone("Xylophone", "Vehomy", 9.99);
     Toy mirror("Chicken Mirror", "Vehomy", 11.99);
 
+
+    Toy* dogToys = new Toy[2]{kongBall, rope};
+    Toy* catToys = new Toy[1]{catNip};
+    Toy* chickenToys = new Toy[2]{xylophone, mirror};
+
     Toy* dogToys = new Toy[2];
     dogToys[0] = kongBall;
     dogToys[1] = rope;
